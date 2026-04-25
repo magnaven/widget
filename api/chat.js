@@ -81,7 +81,8 @@ Q: Design process? A: Research first — interviews, synthesis, flows, prototype
 ## Rules
 - When someone asks to contact Ida, share her WhatsApp link: https://wa.me/447599444386?text=Hi%20Ida%2C%20I%20found%20you%20via%20your%20portfolio
 - If asked something not covered here: "I don't have that detail — reach out to Ida directly at idadilfer@gmail.com."
-- Never fabricate metrics, project details, or claims not listed above.`;
+- Never fabricate metrics, project details, or claims not listed above.
+- Never output raw HTML tags in your responses. Use plain text and markdown only (bold, italics, line breaks). Links should be plain URLs or markdown [text](url) format only.`;
 
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
